@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
 //Name: Boat.ma
-//Last modified: Tue, Jan 23, 2018 02:24:01 AM
+//Last modified: Tue, Jan 23, 2018 02:25:53 AM
 //Codeset: 1252
 requires maya "2018";
 currentUnit -l centimeter -a degree -t film;
@@ -13,15 +13,15 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "4CAF372C-475E-8F9E-CBE0-F3BC93605602";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 74.768717633658014 0.03262276272340614 8.1444449625994046 ;
-	setAttr ".r" -type "double3" 361.46177476101946 9092.8008629358228 0.00012275569264137291 ;
+	setAttr ".t" -type "double3" -87.072921304520463 -16.045290789553796 9.9758856975569543 ;
+	setAttr ".r" -type "double3" 371.66136204278956 8908.8008662666471 0.00029017327344015275 ;
 	setAttr ".rp" -type "double3" 8.8817841970012523e-16 -2.2204460492503131e-16 -3.5527136788005009e-15 ;
 	setAttr ".rpt" -type "double3" 2.6750049471362935e-15 -2.4348696659582508e-16 4.2922701983114359e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "E9DF97C2-4500-9784-A61D-25B7A54B1015";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 74.826798919531186;
+	setAttr ".coi" 88.984419596775297;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -89,18 +89,18 @@ createNode mesh -n "pCubeShape1" -p "pCube1";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 13 ".pt";
-	setAttr ".pt[92]" -type "float3" 0 -0.73220307 0 ;
-	setAttr ".pt[117]" -type "float3" 0 -0.78395879 0 ;
-	setAttr ".pt[118]" -type "float3" 0 -0.78395879 0 ;
-	setAttr ".pt[119]" -type "float3" 0 -0.73220307 0 ;
-	setAttr ".pt[120]" -type "float3" 0 -0.73220307 0 ;
-	setAttr ".pt[121]" -type "float3" 0 -0.73220307 0 ;
-	setAttr ".pt[122]" -type "float3" 0 -0.73220307 0 ;
-	setAttr ".pt[123]" -type "float3" 0 -0.73220307 0 ;
-	setAttr ".pt[124]" -type "float3" 0 -0.73220307 0 ;
-	setAttr ".pt[125]" -type "float3" 0 -0.73220307 0 ;
-	setAttr ".pt[126]" -type "float3" 0 -0.73220307 0 ;
-	setAttr ".pt[127]" -type "float3" 0 -0.73220307 0 ;
+	setAttr ".pt[92]" -type "float3" 7.4505806e-09 -0.95249367 3.7252903e-08 ;
+	setAttr ".pt[117]" -type "float3" 0 -1.0042498 0 ;
+	setAttr ".pt[118]" -type "float3" 0 -1.0042498 0 ;
+	setAttr ".pt[119]" -type "float3" 0 -0.95249403 0 ;
+	setAttr ".pt[120]" -type "float3" 0 -0.95249403 0 ;
+	setAttr ".pt[121]" -type "float3" 0 -0.95249403 0 ;
+	setAttr ".pt[122]" -type "float3" 0 -0.95249403 0 ;
+	setAttr ".pt[123]" -type "float3" 0 -0.95249403 0 ;
+	setAttr ".pt[124]" -type "float3" 3.7252903e-09 -0.95249403 0 ;
+	setAttr ".pt[125]" -type "float3" 2.3283064e-10 -0.95249403 1.8626451e-09 ;
+	setAttr ".pt[126]" -type "float3" 0 -0.95249379 1.1920929e-07 ;
+	setAttr ".pt[127]" -type "float3" -2.3283064e-10 -0.95249414 3.0500814e-08 ;
 createNode transform -n "group";
 	rename -uid "E338055B-4DF6-4CFA-ACAF-20A7BB88A5C9";
 	setAttr ".rp" -type "double3" 0.77559423446655273 0.95267557986294893 -2.770327091217041 ;
